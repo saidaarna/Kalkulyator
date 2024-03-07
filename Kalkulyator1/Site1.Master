@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Kalkulyator1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image: url('https://images2.alphacoders.com/993/993073.jpg');">
+
+<nav class="navbar" style="background-color: #ff69b4; border-color: white;">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <span class="navbar-brand" style="color:white;"><strong>Kalkulyator</strong></span>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="WebForm1.aspx" style="color:  #252525;"><strong>Hesabla</strong></a></li>
+        <li><a href="WebForm2.aspx" style="color:  #252525;"><strong>Tarixce</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
